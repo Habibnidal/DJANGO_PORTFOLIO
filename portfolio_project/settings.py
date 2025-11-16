@@ -59,7 +59,7 @@ WSGI_APPLICATION = 'portfolio_project.wsgi.application'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
 DATABASES = {
-    "default": dj_database_url.config(default=os.environ.get("postgresql://portfoliodatabase_4npt_user:ay0qVj7OFZIwtviYfYJOktiY2cAhA0Un@dpg-d4cti28dl3ps73bnh7o0-a/portfoliodatabase_4npt"))
+    "default": dj_database_url.config(default=os.environ.get("DATABASE_URL"))
 }
 
 # Password validation
