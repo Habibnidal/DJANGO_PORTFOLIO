@@ -24,9 +24,6 @@ urlpatterns = [
     path('', include('portfolio.urls')),
 ]
 
-# Serve media files in production (Render)
 if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
-
-# Serve media files (needed for production on Render)
-urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
