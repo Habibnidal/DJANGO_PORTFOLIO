@@ -27,12 +27,12 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-9dqy9(zndo_yyx%#=%!h3
 DEBUG = os.environ.get('DEBUG', 'False') == 'True'
 
 ALLOWED_HOSTS = [
-    'django-portfolio-2-irxt.onrender.com',
+    'django-portfolio-3-3yjh.onrender.com',
     'localhost',
     '127.0.0.1'
 ]
 CSRF_TRUSTED_ORIGINS = [
-    'https://django-portfolio-2-irxt.onrender.com'
+    'https://django-portfolio-3-3yjh.onrender.com'
 ]
 
 
